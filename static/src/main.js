@@ -25,6 +25,7 @@ function logError(ev){
         error = error.cause;
     }
     console.error(errorMessage);
+    
 }
 browser.addEventListener("error", (ev) => {logError(ev)});
 browser.addEventListener("unhandledrejection", (ev) => {logError(ev)});
